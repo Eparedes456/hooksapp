@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HookApp } from './HookApp';
+/*import { HookApp } from './HookApp';
 import { SimpleForm } from './useEffect/SimpleForm';
 import { CounterApp } from './useState/CounterApp';
 import { CustomCounterHook } from './useState/CustomCounterHook';
@@ -10,10 +10,14 @@ import { FocusScreen } from './useRef/FocusScreen';
 import { RealExampleRef } from './useRef/RealExampleRef';
 import { Memorize } from './useMemo/Memorize';
 import {MemoHook } from './useMemo/MemoHook';
+import { Padre } from './07-tarea-memo/Padre';*/
+import { TareasApp } from './useReducer/TareasApp';
 
 ReactDOM.render(
-    /*<CustomCounterHook/>,*/
-    <MemoHook />,
+    //<CustomCounterHook/>,
+    <TareasApp />,
     document.getElementById('root')
 
 )
+
+//import './useReducer/introReducer.js';
