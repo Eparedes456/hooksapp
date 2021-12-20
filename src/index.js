@@ -9,10 +9,11 @@ import { MultipleCustomHooks } from './components/examples/MultipleCustomHooks';
 import { FocusScreen } from './useRef/FocusScreen';
 import { RealExampleRef } from './useRef/RealExampleRef';
 import { Memorize } from './useMemo/Memorize';
+import {MemoHook } from './useMemo/MemoHook';
 
 ReactDOM.render(
     /*<CustomCounterHook/>,*/
-    <Memorize />,
+    <MemoHook />,
     document.getElementById('root')
 
 )
