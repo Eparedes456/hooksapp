@@ -1,33 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { TareasListItem } from './TareasListItem';
 
-export const TareasList = ( tareas,deleteItem, marcarCompletado ) => {
+export const TareasList = (  { tareas,deleteItem, marcarCompletado }) => {
     return (
         
             <ul className='list-group list-group-flush'>
                         {
                             tareas.map( (tarea,i)  =>(
-                                <div className='row'>
-                                    <li key={tarea.id} className='list-group-item'> 
-                                        
-                                        <p
-                                            onClick={ () => marcarCompletado(tarea.id)}
-                                         
-                                            className= { `${ tarea.done === true ?'complete' : '' } `  }
-                                        > 
-                                            {i + 1}. {tarea.descripcion} </p>
+                                
+                                < TareasListItem 
+                                    tarea = { tarea }
+                                    index = { i }
+                                    deleteItem = { deleteItem }
+                                    marcarCompletado = { marcarCompletado }
+                                />
 
-                                        <button 
-                                            className="btn btn-danger"
-                                            onClick={ ()=> deleteItem(tarea.id) }
-                                        >
-                                                
-                                            
-                                            Borrar
-                                        </button>
-                                    </li>
-
-
-                                </div>
                                 
                             ))
                         }
