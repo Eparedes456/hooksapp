@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { MainApp } from './useContext/MainApp';
 /*import { HookApp } from './HookApp';
 import { SimpleForm } from './useEffect/SimpleForm';
 import { CounterApp } from './useState/CounterApp';
@@ -11,11 +12,11 @@ import { RealExampleRef } from './useRef/RealExampleRef';
 import { Memorize } from './useMemo/Memorize';
 import {MemoHook } from './useMemo/MemoHook';
 import { Padre } from './07-tarea-memo/Padre';*/
-import { TareasApp } from './useReducer/TareasApp';
+//import { TareasApp } from './useReducer/TareasApp';
 
 ReactDOM.render(
     //<CustomCounterHook/>,
-    <TareasApp />,
+    <MainApp />,
     document.getElementById('root')
 
 )
